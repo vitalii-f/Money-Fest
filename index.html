@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Money Fest Fest </title>
+    <link href="/reset.css" rel="stylesheet" type="text/css">
+    <link href="/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="content">
+    <div class="discount__back">
+        <div class="discount__back__close" onclick="closeDiscount()"> </div>
+    </div>
+    
+    <header>
+    <div class="header__wrapper wrapper">
+        <div class="header__grid grid_default">
+            <a href="#" class="header__logo"> <img class="header__logo" src="/img/svg/logo.svg"> </a>
+            <div class="header__links">
+                <a href="#"> Главная </a>
+                <a href="#"> Курсы </a>
+                <a href="#"> Эксперты </a>
+                <a href="#"> Публикации </a>
+            </div>
+            <a href="#" class="header__account_button button_s button_active"> Личный кабинет </a>
+        </div>
+    </div>
+    </header>
+    
+    <main>
+    
+        <section class="main_slider">
+        <div class="slider__wrapper wrapper">
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="item__info">
+                        <h3 class="info__title"> Учим зарабатывать на криптовалюте с нуля </h3>
+                        <div class="info__description"> Онлайн-школа и профессиональное сообщество </div>
+                        <a href="#">
+                            <div class="info_button button_s button_active"> Выбрать курс </div>
+                        </a>
+                    </div>
+                    <img class="item__img" src="/img/png/slider_background_1.png">
+                </div>
+
+                <div class="slider__item">
+                    <div class="item__info">
+                        <h3 class="info__title"> Как заработать на криптовалюте: пошаговое руководство </h3>
+                        <div class="info__description"> Сохранить свой капитал и приумножить его в 2-3 раза </div>
+                        <a href="#">
+                            <div class="info_button button_s button_active"> Подробнее </div>
+                        </a>
+                    </div>
+                    <img class="item__img" src="/img/png/slider_background_2.png">
+                </div>
+
+                <div class="slider__item">
+                    <div class="item__info">
+                        <h3 class="info__title"> Учим зарабатывать на криптовалюте с нуля </h3>
+                        <div class="info__description"> Онлайн-школа и профессиональное сообщество </div>
+                        <a href="#">
+                            <div class="info_button button_s button_active"> Выбрать курс </div>
+                        </a>
+                    </div>
+                    <img class="item__img" src="/img/png/slider_background_1.png">
+                </div>
+
+                <a class="slider__prev" onclick="minusSlide()"> </a>
+                <a class="slider__next" onclick="plusSlide()"> </a>
+            </div>
+
+            <div class="slider__dots">
+                <span class="slider__dots_item" onclick="currentSlide(1)"></span>
+                <span class="slider__dots_item" onclick="currentSlide(2)"></span>
+                <span class="slider__dots_item" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        </section>
+
+        <section class="statistic">
+            <div class="statistic__wrapper wrapper">
+                <div class="statistic__grid">
+                    <div class="statistic__item">
+                        <h3 class="statistic__num"> 4000+ </h3>
+                        <div class="statistic__description"> Учеников уже зарабатывают на криптовалюте </div>
+                    </div>
+                    <div class="statistic__item">
+                        <h3 class="statistic__num"> 700+ </h3>
+                        <div class="statistic__description"> Трейдеров в закрытом инвест-комьюнити </div>
+                    </div>
+                    <div class="statistic__item">
+                        <h3 class="statistic__num"> 6 лет </h3>
+                        <div class="statistic__description"> Успешно обучаем людей зарабатывать </div>
+                    </div>
+                    <div class="statistic__item">
+                        <h3 class="statistic__num"> $17+ млн </h3>
+                        <div class="statistic__description"> Под консультационным управлением </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="courses">
+            <div class="courses__wrapper wrapper">
+                <div class="courses__grid">
+                    <div class="courses__item">
+                        <div class="courses__info">
+                            <div class="courses__term"> 3 недели </div>
+                            <h3 class="courses__title"> Криптоинвестиции: успешный старт </h3>
+                            <div class="courses__description"> Базовые знания для новичков. Поможем разобраться с биржей, купить криптовалюту и совершить первые выгодные сделки с нуля. </div>
+                            <a href="#" class="courses__button"> Подробнее </a>
+                        </div>
+                        
+                        <img src="img/png/courses_rocket.png" class="courses__img">
+                    </div>
+                    <div class="courses__item">
+                        <div class="courses__info">
+                            <div class="courses__term"> от 2 до 8 месяцев </div>
+                            <h3 class="courses__title"> Мастерская трейдинга: практика и заработок </h3>
+                            <div class="courses__description"> Базовые знания для новичков. Поможем разобраться с биржей, купить криптовалюту и совершить первые выгодные сделки с нуля. </div>
+                            <div class="courses__button"> Подробнее </div>
+                        </div>
+                        
+                        <img src="img/png/courses_mining.png" class="courses__img">
+                    </div>
+                    <div class="courses__item">
+                        <div class="courses__info">
+                            <div class="courses__term"> от 1 месяца </div>
+                            <h3 class="courses__title"> Индивидуальное сопровождение эксперта </h3>
+                            <div class="courses__description"> Базовые знания для новичков. Поможем разобраться с биржей, купить криптовалюту и совершить первые выгодные сделки с нуля. </div>
+                            <div class="courses__button"> Подробнее </div> 
+                        </div>
+                        
+                        <img src="img/png/courses_secured.png" class="courses__img">
+                    </div>
+                    <div class="courses__item" style="grid-template-columns: 1fr; justify-items: center; align-items: center;">
+                        <div class="courses__info" style="margin: 0;">
+                            <h3 class="courses__title"> Какой выбрать? </h3>
+                            <div class="courses__button"> Сравнить курсы </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <div class="education__wrapper wrapper">
+                <div class="education__grid"> 
+                    <h2 class="education__title"> Как проходит обучение </h2>
+                    <div class="education__video_wrapper"> 
+                        <video class="education__video" autoplay loop width="100%">
+                            <source src="video/promo.mp4">   
+                        </video>
+                    </div>
+                    <div class="education__steps">
+                        <div class="steps__item"> 
+                            <div class="steps__number"> 1 </div>
+                            <h3 class="steps__title"> Видеоуроки <br> и онлайн-встречи </h3>
+                            <div class="steps__text"> Доступ к ним остается навсегда.</div>
+                        </div>
+                        <div class="steps__item"> 
+                            <div class="steps__number"> 2 </div>
+                            <h3 class="steps__title"> Домашние <br> задания </h3>
+                            <div class="steps__text"> С обратной связью от эксперта. </div>
+                        </div>
+                        <div class="steps__item"> 
+                            <div class="steps__number"> 3 </div>
+                            <h3 class="steps__title"> Кураторы <br> курсов</h3>
+                            <div class="steps__text"> Всегда на связи, чтобы ответить на ваши вопросы.</div>
+                        </div>
+                        <div class="steps__item"> 
+                            <div class="steps__number"> 4 </div>
+                            <h3 class="steps__title"> Чат с участниками <br> курса </h3>
+                            <div class="steps__text"> Новости и прогнозы, полезные материалы и просто общение.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <section class="experts"> 
+            <div class="experts__wrapper wrapper">
+                <h3 class="experts__title"> Эксперты школы </h3>
+                <div class="experts__cards">
+                    <div class="experts__card">
+                        <img class="experts__img" src="/img/png/expert_1.png">
+                        <div class="experts__info">
+                            <div class="info__name"> Максим Денисламов </div>
+                            <div class="info__description"> Гуру технического анализа, автор книг по ивестициям, капитал под консультационным управлением — $ 8 млн. </div>
+                        </div>
+                    </div>
+                    <div class="experts__card">
+                        <img class="experts__img" src="/img/png/expert_2.png">
+                        <div class="experts__info">
+                            <div class="info__name"> Дмитрий Тюрин </div>
+                            <div class="info__description"> Инвестор на криптовалютном рынке с положительной дохо-дностью 90 месяцев подряд. </div>
+                        </div>
+                    </div>
+                    <div class="experts__card">
+                        <img class="experts__img" src="/img/png/expert_3.png">
+                        <div class="experts__info">
+                            <div class="info__name"> Мария Лощилова </div>
+                            <div class="info__description"> Специалист по криптоинвести-циям, соавтор курсов Манифест. В 22 заработала свой первый миллион. </div>
+                        </div>
+                    </div>
+                    <div class="experts__card">
+                        <img class="experts__img" src="/img/png/expert_4.png">
+                        <div class="experts__info">
+                            <div class="info__name"> Анатолий Дагиль </div>
+                            <div class="info__description"> Специалист по криптоинвести-циям, автор курсов Манифест, лицензированный брокер. </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+    <div class="footer__wrapper wrapper">
+        <div class="footer__grid">
+            <div class="footer__top grid_default">
+                <div class="footer__social">
+                    <img class="footer__logo" src="/img/svg/logo_white.svg">
+                    <div class="social__icons">
+                        <img class="footer__vk" src="/img/svg/icon_vk.svg">
+                        <img class="footer__yt" src="/img/svg/icon_yt.svg">
+                        <img class="footer__tg" src="/img/svg/icon_tg.svg">
+                    </div>
+                </div>
+                <ul class="footer__courses">
+                    <li> <a href="#">
+                            <h3> Все курсы </h3>
+                        </a> </li>
+                    <li> <a href="#"> Криптоинвестиции: успешный старт </a> </li>
+                    <li> <a href="#"> Мастерская трейдинга: практика и заработок </a> </li>
+                    <li> <a href="#"> Индивидуальное сопровождение эксперта </a> </li>
+                </ul>
+
+                <div class="footer__nav">
+                    <ul class="footer__links">
+                        <li> <a href="#"> Главная </a> </li>
+                        <li> <a href="#"> Курсы </a> </li>
+                        <li> <a href="#"> Эксперты </a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__line"> </div>
+
+            <div class="footer__bottom grid_default">
+                <a href="#" class="footer__corp"> ООО «Манифест» </a>
+                <a href="#" class="footer__privacy"> Политика конфиденциальности </a>
+                <a href="#" class="footer__offer"> Договор–оферта </a>
+            </div>
+        </div>
+    </div>
+    </footer>
+</div>
+<script src="/js/main.js"> </script>
+</body>
+</html>
