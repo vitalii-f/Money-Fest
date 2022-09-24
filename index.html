@@ -33,7 +33,7 @@
         <section class="main_slider">
         <div class="slider__wrapper wrapper">
             <div class="slider">
-                <div class="slider__item">
+                <div id="slide_1" class="slider__item">
                     <div class="item__info">
                         <h3 class="info__title"> Учим зарабатывать на криптовалюте с нуля </h3>
                         <div class="info__description"> Онлайн-школа и профессиональное сообщество </div>
@@ -41,10 +41,10 @@
                             <div class="info_button button_s button_active"> Выбрать курс </div>
                         </a>
                     </div>
-                    <img class="item__img" src="img/png/slider_background_1.png">
+                    <img class="item__img" src="img/png/slider_background_1.png" style="align-self: flex-end">
                 </div>
 
-                <div class="slider__item">
+                <div id="slide_2" class="slider__item">
                     <div class="item__info">
                         <h3 class="info__title"> Как заработать на криптовалюте: пошаговое руководство </h3>
                         <div class="info__description"> Сохранить свой капитал и приумножить его в 2-3 раза </div>
@@ -55,7 +55,7 @@
                     <img class="item__img" src="img/png/slider_background_2.png">
                 </div>
 
-                <div class="slider__item">
+                <div id="slide_3" class="slider__item">
                     <div class="item__info">
                         <h3 class="info__title"> Учим зарабатывать на криптовалюте с нуля </h3>
                         <div class="info__description"> Онлайн-школа и профессиональное сообщество </div>
@@ -63,17 +63,18 @@
                             <div class="info_button button_s button_active"> Выбрать курс </div>
                         </a>
                     </div>
-                    <img class="item__img" src="img/png/slider_background_1.png">
+                    <img class="item__img" src="img/png/slider_background_1.png" style="align-self: flex-end">
                 </div>
-
-                <a class="slider__prev" onclick="minusSlide()"> </a>
-                <a class="slider__next" onclick="plusSlide()"> </a>
             </div>
 
+            <div class="slider__prev" onclick="minusSlide()"> </div>
+
+            <div class="slider__next" onclick="plusSlide()"> </div>
+
             <div class="slider__dots">
-                <span class="slider__dots_item" onclick="currentSlide(1)"></span>
-                <span class="slider__dots_item" onclick="currentSlide(2)"></span>
-                <span class="slider__dots_item" onclick="currentSlide(3)"></span>
+                <a href="#slide_1" class="slider__dots_item" onclick="currentSlide(1)"> </a>
+                <a href="#slide_2" class="slider__dots_item" onclick="currentSlide(2)"> </a>
+                <a href="#slide_3" class="slider__dots_item" onclick="currentSlide(3)"> </a>
             </div>
         </div>
         </section>
@@ -214,6 +215,25 @@
                         </div>
                     </div>
                     
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="feedback__wrapper wrapper">
+                <div class="feedback__content">
+                    <div class="feedback__info"> 
+                        <h3 class="feedback__title"> Есть вопросы? <br> Сейчас ответим</h3>
+                        <p class="feedback__description"> Оставьте свои контакты </p>
+                    </div>
+                    <form class="feedback__form" action="#" autocomplete="on" name="feedback__form">
+                        <input class="form__name" name="name" type="text" placeholder="Имя">
+                        <input class="form__phone" name="phone" type="number" placeholder="8 (333) 232-22-11">
+                        <input class="form__email" name="email" type="email" placeholder="Email">
+                        
+                        <label> Нажимая «Отправить», соглашаюсь с правилами </label>
+                        <input class="form__input button_inactive" name="form-email" type="submit" placeholder="отправить">
+                    </form>
                 </div>
             </div>
         </section>

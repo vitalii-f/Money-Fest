@@ -1,46 +1,60 @@
-/* Индекс слайда по умолчанию */
+var slider = document.getElementsByClassName("slider");
+var sliderChild = document.getElementsByClassName("slider__item");
+
 var slideIndex = 1;
-showSlides(slideIndex);
+currentSlide(slideIndex);
 
-/* Функция увеличивает индекс на 1, показывает следующй слайд*/
+document.querySelector('.slider__dots').addEventListener('click', (event) => {
+    const $slide = document.querySelector(event.target.getAttribute('href'));
+    if (!$slide) return;
+    
+    if ($slide.scrollIntoViewIfNeeded) {
+      event.preventDefault();
+      $slide.scrollIntoViewIfNeeded();
+    } else if ($slide.scrollIntoView) {
+      event.preventDefault();
+      $slide.scrollIntoView();
+    }
+  });
+
+document.querySelector('.slider').addEventListener('scroll', (event) => {
+    var swipeSlide = Math.floor(slider[0].scrollLeft / 1000 + 1);
+    changeSlide(slideIndex = swipeSlide);
+});
+
+function currentSlide (currentId) {
+    changeSlide(slideIndex = currentId);
+}
+
 function plusSlide() {
-    showSlides(slideIndex += 1);
+    if (slideIndex == sliderChild.length) {
+        changeSlide(slideIndex = sliderChild.length);
+    } else {
+        slider[0].scrollLeft += slider[0].clientWidth;
+        changeSlide(slideIndex += 1); 
+    }
 }
 
-/* Функция уменьшяет индекс на 1, показывает предыдущий слайд*/
 function minusSlide() {
-    showSlides(slideIndex -= 1);  
+    if (slideIndex == 1) {
+        changeSlide (slideIndex = 1);
+    } else {
+        slider[0].scrollLeft -= slider[0].clientWidth;
+        changeSlide (slideIndex -= 1);
+    }  
 }
 
-/* Устанавливает текущий слайд */
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-/* Основная функция слайдера */
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("slider__item");
+function changeSlide (currentId) {
     var dots = document.getElementsByClassName("slider__dots_item");
-    if (n > slides.length) {
-      slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
+
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex - 1].style.display = "grid";
-    dots[slideIndex - 1].className += " active";
-}
 
+    dots[currentId - 1].className += " active";
+  }
 
 function closeDiscount() {
     var discount_block = document.getElementsByClassName("discount__back");
     discount_block[0].style.display = "none";
-    
 }
