@@ -1,0 +1,70 @@
+/* FeedBack */
+
+
+.feedback {
+}
+.feedback__wrapper {
+    
+}
+.feedback__content {
+    grid-column: 2/12;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 1030px;
+    height: 346px;
+    
+    background-color: var(--color-gold);
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+}
+.feedback__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+}
+.feedback__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+}
+.feedback__form {
+    max-width: 424px;
+    margin-right: 10px;
+    display: grid;
+    row-gap: 18px;
+    column-gap: 26px;
+    
+    justify-self: start;
+}
+.form__name, .form__phone, .form__email {
+    
+    padding: 19px 0 19px 21px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.form__name {
+    grid-column: 1/3;
+}
+.feedback__form label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form__input {
+    height: 64px;
+    color: var(--color-text-white);
+    justify-self: end;
+}
+
+/* FeedBack */

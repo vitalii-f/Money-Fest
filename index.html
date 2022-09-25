@@ -7,6 +7,14 @@
     <title> Money Fest Fest </title>
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="main.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/slider.css" rel="stylesheet" type="text/css">
+    <link href="css/statistic.css" rel="stylesheet" type="text/css">
+    <link href="css/courses.css" rel="stylesheet" type="text/css">
+    <link href="css/education.css" rel="stylesheet" type="text/css">
+    <link href="css/experts.css" rel="stylesheet" type="text/css">
+    <link href="css/feedback.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="content">
@@ -18,11 +26,18 @@
     <div class="header__wrapper wrapper">
         <div class="header__grid grid_default">
             <a href="#" class="header__logo"> <img class="header__logo" src="img/svg/logo.svg"> </a>
+            <div class="header__burger">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+            </div>
+            
             <div class="header__links">
                 <a href="#"> Главная </a>
                 <a href="#"> Курсы </a>
                 <a href="#"> Эксперты </a>
                 <a href="#"> Публикации </a>
+                <span> </span>
             </div>
             <a href="#" class="header__account_button button_s button_active"> Личный кабинет </a>
         </div>
@@ -81,7 +96,7 @@
 
         <section class="statistic">
             <div class="statistic__wrapper wrapper">
-                <div class="statistic__grid">
+                <div class="statistic__grid grid_default">
                     <div class="statistic__item">
                         <h3 class="statistic__num"> 4000+ </h3>
                         <div class="statistic__description"> Учеников уже зарабатывают на криптовалюте </div>
@@ -106,7 +121,7 @@
 
         <section class="courses">
             <div class="courses__wrapper wrapper">
-                <div class="courses__grid">
+                <div class="courses__grid grid_default">
                     <div class="courses__item">
                         <div class="courses__info">
                             <div class="courses__term"> 3 недели </div>
@@ -149,7 +164,7 @@
 
         <section class="education">
             <div class="education__wrapper wrapper">
-                <div class="education__grid"> 
+                <div class="education__grid grid_default"> 
                     <h2 class="education__title"> Как проходит обучение </h2>
                     <div class="education__video_wrapper"> 
                         <video class="education__video" autoplay loop width="100%">
@@ -184,43 +199,45 @@
 
         <section class="experts"> 
             <div class="experts__wrapper wrapper">
-                <h3 class="experts__title"> Эксперты школы </h3>
-                <div class="experts__cards">
-                    <div class="experts__card">
-                        <img class="experts__img" src="img/png/expert_1.png">
-                        <div class="experts__info">
-                            <div class="info__name"> Максим Денисламов </div>
-                            <div class="info__description"> Гуру технического анализа, автор книг по ивестициям, капитал под консультационным управлением — $ 8 млн. </div>
+                <div class="experts__grid grid_default">
+                    <h3 class="experts__title title_default"> Эксперты школы </h3>
+                    <div class="experts__cards">
+                        <div class="experts__card">
+                            <img class="experts__img" src="img/png/expert_1.png">
+                            <div class="experts__info">
+                                <div class="info__name"> Максим Денисламов </div>
+                                <div class="info__description"> Гуру технического анализа, автор книг по ивестициям, капитал под консультационным управлением — $ 8 млн. </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="experts__card">
-                        <img class="experts__img" src="img/png/expert_2.png">
-                        <div class="experts__info">
-                            <div class="info__name"> Дмитрий Тюрин </div>
-                            <div class="info__description"> Инвестор на криптовалютном рынке с положительной дохо-дностью 90 месяцев подряд. </div>
+                        <div class="experts__card">
+                            <img class="experts__img" src="img/png/expert_2.png">
+                            <div class="experts__info">
+                                <div class="info__name"> Дмитрий Тюрин </div>
+                                <div class="info__description"> Инвестор на криптовалютном рынке с положительной дохо-дностью 90 месяцев подряд. </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="experts__card">
-                        <img class="experts__img" src="img/png/expert_3.png">
-                        <div class="experts__info">
-                            <div class="info__name"> Мария Лощилова </div>
-                            <div class="info__description"> Специалист по криптоинвести-циям, соавтор курсов Манифест. В 22 заработала свой первый миллион. </div>
+                        <div class="experts__card">
+                            <img class="experts__img" src="img/png/expert_3.png">
+                            <div class="experts__info">
+                                <div class="info__name"> Мария Лощилова </div>
+                                <div class="info__description"> Специалист по криптоинвести-циям, соавтор курсов Манифест. В 22 заработала свой первый миллион. </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="experts__card">
-                        <img class="experts__img" src="img/png/expert_4.png">
-                        <div class="experts__info">
-                            <div class="info__name"> Анатолий Дагиль </div>
-                            <div class="info__description"> Специалист по криптоинвести-циям, автор курсов Манифест, лицензированный брокер. </div>
+                        <div class="experts__card">
+                            <img class="experts__img" src="img/png/expert_4.png">
+                            <div class="experts__info">
+                                <div class="info__name"> Анатолий Дагиль </div>
+                                <div class="info__description"> Специалист по криптоинвести-циям, автор курсов Манифест, лицензированный брокер. </div>
+                            </div>
                         </div>
+
                     </div>
-                    
                 </div>
             </div>
         </section>
 
         <section class="feedback">
-            <div class="feedback__wrapper wrapper">
+            <div class="feedback__wrapper wrapper grid_default">
                 <div class="feedback__content">
                     <div class="feedback__info"> 
                         <h3 class="feedback__title"> Есть вопросы? <br> Сейчас ответим</h3>

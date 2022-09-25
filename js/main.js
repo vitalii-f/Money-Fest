@@ -58,3 +58,15 @@ function closeDiscount() {
     var discount_block = document.getElementsByClassName("discount__back");
     discount_block[0].style.display = "none";
 }
+
+
+var burgerMenu = document.getElementsByClassName("header__burger");
+var headerLinks = document.getElementsByClassName("header__links");
+var headerButton = document.getElementsByClassName("header__account_button");
+
+document.querySelector('.header__burger').addEventListener('click', (event) => {
+    console.log("yes");
+    burgerMenu[0].classList.toggle('_active');
+    headerLinks[0].classList.toggle('_active');
+    headerButton[0].classList.toggle('_active');
+});

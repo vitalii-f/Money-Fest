@@ -1,0 +1,76 @@
+/* footer */
+
+footer {
+    color: var(--color-text-white);
+    margin-top: 160px;
+    background-color: var(--color-background-black);
+}
+
+.footer__grid {
+    display: grid;
+}
+
+.footer__social {
+    grid-column: 1/3;
+}
+
+.footer__courses {
+    grid-column: 5/9;
+}
+
+.footer__nav {
+    grid-column: 10/13;
+}
+
+.footer__top {
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.footer__courses > li:first-of-type {
+    margin-bottom: 20px;
+}
+
+.footer__courses > li {
+    margin-bottom: 12px;
+}
+
+.footer__links {
+    margin-top: 60px;
+}
+
+.footer__links > li {
+    margin-bottom: 15px;
+}
+
+.footer__line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    grid-row: 2/3;
+    grid-column: 1/13;
+    margin-top: 82px;
+}
+
+.footer__bottom {
+    margin-top: 37px;
+    margin-bottom: 146px;
+    grid-row: 3/4;
+    color: var(--color-footer-links);
+}
+
+.footer__corp {
+    grid-column: 1/3;
+}
+.footer__privacy {
+    grid-column: 5/9;
+}
+.footer__offer {
+    grid-column: 10/13;
+}
