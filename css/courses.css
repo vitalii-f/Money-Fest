@@ -45,7 +45,7 @@
     margin: 0 0 0 15px;
     width: 17px;
     height: 17px;
-    background-image: url(img/svg/arrow_button.svg);
+    background-image: url("../img/svg/arrow_button.svg");
 }
 .courses__img {
     max-width: 140px;
