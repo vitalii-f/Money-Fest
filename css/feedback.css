@@ -71,6 +71,7 @@
         text-align: center;
         height: 542px;
         grid-template-columns: none;
+        padding: 0 15px;
     }
 
     .feedback__form {
@@ -80,6 +81,18 @@
         justify-items: center;
         /* grid-template-columns: none;
         grid-template-rows: none; */
+    }
+
+    .feedback__title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    .feedback__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .form__input {

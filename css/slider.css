@@ -109,6 +109,8 @@
     }
 
     .item__info {
+        display: flex;
+        flex-direction: column;
         margin: 0 10px;
     }
 
@@ -119,6 +121,20 @@
     .info_button {
         width: 100%;
         margin: 0 auto;
+    }   
+}
+
+@media (max-width: 425px) {
+    .info__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .info__description {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
     }
 }
 

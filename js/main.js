@@ -18,7 +18,10 @@ document.querySelector('.slider__dots').addEventListener('click', (event) => {
   });
 
 document.querySelector('.slider').addEventListener('scroll', (event) => {
-    var swipeSlide = Math.floor(slider[0].scrollLeft / 1000 + 1);
+    // console.log("W: " + sliderChild[0].clientWidth);
+    // console.log("L: " + slider[0].scrollLeft);
+    var swipeSlide = Math.floor(slider[0].scrollLeft / sliderChild[0].clientWidth + 1);
+    // var swipeSlide = Math.floor(slider[0].scrollLeft / 1000 + 1);
     changeSlide(slideIndex = swipeSlide);
 });
 
