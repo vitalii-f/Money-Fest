@@ -35,15 +35,14 @@
 }
 .feedback__form {
     max-width: 424px;
-    margin-right: 10px;
+    margin: 0 15px 0 0;
     display: grid;
     row-gap: 18px;
     column-gap: 26px;
-    
     justify-self: start;
 }
 .form__name, .form__phone, .form__email {
-    
+    width: 100%;
     padding: 19px 0 19px 21px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -65,6 +64,31 @@
     height: 64px;
     color: var(--color-text-white);
     justify-self: end;
+}
+
+@media (max-width: 768px){
+    .feedback__content {
+        text-align: center;
+        height: 542px;
+        grid-template-columns: none;
+    }
+
+    .feedback__form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-items: center;
+        /* grid-template-columns: none;
+        grid-template-rows: none; */
+    }
+
+    .form__input {
+        margin: 0 auto;
+    }
+
+    .feedback__form > input {
+        /* margin: 0px 15px; */
+    }
 }
 
 /* FeedBack */

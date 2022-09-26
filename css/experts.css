@@ -2,6 +2,10 @@
 
 .experts {
 }
+
+.experts__grid {
+    margin-right: 0;
+}
 .experts__wrapper {
 
 }
@@ -40,6 +44,11 @@
 }
 
 @media (max-width: 1100px) {
+    .experts__grid {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+
     .experts__cards {
         scroll-snap-type: x mandatory;
         overflow-x: scroll;

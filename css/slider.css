@@ -102,6 +102,26 @@
     }
 }
 
+@media (max-width: 768px) {
+    .slider__item {
+        grid-template-columns: none;
+        justify-content: center;
+    }
+
+    .item__info {
+        margin: 0 10px;
+    }
+
+    .item__img {
+        display: none;
+    }
+
+    .info_button {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
 /* При наведении на кнопки добавляем фон кнопок */
 .slider__prev:hover,
 .slider__next:hover {
