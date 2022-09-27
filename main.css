@@ -102,6 +102,7 @@ section {
     height: 70px;
     background-repeat: no-repeat;
     margin: 0 auto;
+    background-position: center;
 }
 
 .discount__back__close {
@@ -116,6 +117,24 @@ section {
 
 .discount__back__close:hover {
     background-image: url("img/svg/icon_close_active.svg");
+}
+
+@media (max-width: 1200px) {
+    .discount__back {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    h3[class] {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .grid_default {
+        margin: 0px 15px;
+    }
 }
 
 /* discount */

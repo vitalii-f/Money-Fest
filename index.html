@@ -23,94 +23,94 @@
     </div>
     
     <header>
-    <div class="header__wrapper wrapper">
-        <div class="header__grid grid_default">
-            <a href="#" class="header__logo"> <img class="header__logo" src="img/svg/logo.svg"> </a>
-            <div class="header__burger">
-                <span> </span>
-                <span> </span>
-                <span> </span>
+        <div class="header__wrapper wrapper">
+            <div class="header__grid grid_default">
+                <a href="#" class="header__logo"> <img class="header__logo" src="img/svg/logo.svg" alt="logo"> </a>
+                <div class="header__burger">
+                    <span> </span>
+                    <span> </span>
+                    <span> </span>
+                </div>
+                
+                <div class="header__links">
+                    <a href="#"> Главная </a>
+                    <a href="#"> Курсы </a>
+                    <a href="#"> Эксперты </a>
+                    <a href="#"> Публикации </a>
+                    <span> </span>
+                </div>
+                <a href="#" class="header__account_button button_s button_active"> Личный кабинет </a>
             </div>
-            
-            <div class="header__links">
-                <a href="#"> Главная </a>
-                <a href="#"> Курсы </a>
-                <a href="#"> Эксперты </a>
-                <a href="#"> Публикации </a>
-                <span> </span>
-            </div>
-            <a href="#" class="header__account_button button_s button_active"> Личный кабинет </a>
         </div>
-    </div>
     </header>
     
     <main>
         <section class="main_slider">
-        <div class="slider__wrapper wrapper">
-            <div class="slider">
-                <div id="slide_1" class="slider__item">
-                    <div class="item__info">
-                        <h3 class="info__title"> Учим зарабатывать на криптовалюте с нуля </h3>
-                        <div class="info__description"> Онлайн-школа и профессиональное сообщество </div>
-                        <a href="#">
-                            <div class="info_button button_s button_active"> Выбрать курс </div>
-                        </a>
+            <div class="slider__wrapper wrapper">
+                <div class="slider">
+                    <div id="slide_1" class="slider__item">
+                        <div class="item__info">
+                            <h4 class="info__title"> Учим зарабатывать на криптовалюте с нуля </h4>
+                            <div class="info__description"> Онлайн-школа и профессиональное сообщество </div>
+                            <a href="#">
+                                <div class="info_button button_s button_active"> Выбрать курс </div>
+                            </a>
+                        </div>
+                        <img class="item__img" src="img/png/slider_background_1.png" style="align-self: flex-end">
                     </div>
-                    <img class="item__img" src="img/png/slider_background_1.png" style="align-self: flex-end">
+                
+                    <div id="slide_2" class="slider__item">
+                        <div class="item__info">
+                            <h4 class="info__title"> Как заработать на криптовалюте: пошаговое руководство </h4>
+                            <div class="info__description"> Сохранить свой капитал и приумножить его в 2-3 раза </div>
+                            <a href="#">
+                                <div class="info_button button_s button_active"> Подробнее </div>
+                            </a>
+                        </div>
+                        <img class="item__img" src="img/png/slider_background_2.png">
+                    </div>
+                
+                    <div id="slide_3" class="slider__item">
+                        <div class="item__info">
+                            <h4 class="info__title"> Учим зарабатывать на криптовалюте с нуля </h4>
+                            <div class="info__description"> Онлайн-школа и профессиональное сообщество </div>
+                            <a href="#">
+                                <div class="info_button button_s button_active"> Выбрать курс </div>
+                            </a>
+                        </div>
+                        <img class="item__img" src="img/png/slider_background_1.png" style="align-self: flex-end">
+                    </div>
                 </div>
-
-                <div id="slide_2" class="slider__item">
-                    <div class="item__info">
-                        <h3 class="info__title"> Как заработать на криптовалюте: пошаговое руководство </h3>
-                        <div class="info__description"> Сохранить свой капитал и приумножить его в 2-3 раза </div>
-                        <a href="#">
-                            <div class="info_button button_s button_active"> Подробнее </div>
-                        </a>
-                    </div>
-                    <img class="item__img" src="img/png/slider_background_2.png">
-                </div>
-
-                <div id="slide_3" class="slider__item">
-                    <div class="item__info">
-                        <h3 class="info__title"> Учим зарабатывать на криптовалюте с нуля </h3>
-                        <div class="info__description"> Онлайн-школа и профессиональное сообщество </div>
-                        <a href="#">
-                            <div class="info_button button_s button_active"> Выбрать курс </div>
-                        </a>
-                    </div>
-                    <img class="item__img" src="img/png/slider_background_1.png" style="align-self: flex-end">
+            
+                <div class="slider__prev" onclick="minusSlide()"> </div>
+            
+                <div class="slider__next" onclick="plusSlide()"> </div>
+            
+                <div class="slider__dots">
+                    <a href="#slide_1" class="slider__dots_item" onclick="currentSlide(1)"> </a>
+                    <a href="#slide_2" class="slider__dots_item" onclick="currentSlide(2)"> </a>
+                    <a href="#slide_3" class="slider__dots_item" onclick="currentSlide(3)"> </a>
                 </div>
             </div>
-
-            <div class="slider__prev" onclick="minusSlide()"> </div>
-
-            <div class="slider__next" onclick="plusSlide()"> </div>
-
-            <div class="slider__dots">
-                <a href="#slide_1" class="slider__dots_item" onclick="currentSlide(1)"> </a>
-                <a href="#slide_2" class="slider__dots_item" onclick="currentSlide(2)"> </a>
-                <a href="#slide_3" class="slider__dots_item" onclick="currentSlide(3)"> </a>
-            </div>
-        </div>
         </section>
 
         <section class="statistic">
             <div class="statistic__wrapper wrapper">
                 <div class="statistic__grid grid_default">
                     <div class="statistic__item">
-                        <h3 class="statistic__num"> 4000+ </h3>
+                        <h4 class="statistic__num"> 4000+ </h4>
                         <div class="statistic__description"> Учеников уже зарабатывают на криптовалюте </div>
                     </div>
                     <div class="statistic__item">
-                        <h3 class="statistic__num"> 700+ </h3>
+                        <h4 class="statistic__num"> 700+ </h4>
                         <div class="statistic__description"> Трейдеров в закрытом инвест-комьюнити </div>
                     </div>
                     <div class="statistic__item">
-                        <h3 class="statistic__num"> 6 лет </h3>
+                        <h4 class="statistic__num"> 6 лет </h4>
                         <div class="statistic__description"> Успешно обучаем людей зарабатывать </div>
                     </div>
                     <div class="statistic__item">
-                        <h3 class="statistic__num"> $17+ млн </h3>
+                        <h4 class="statistic__num"> $17+ млн </h4>
                         <div class="statistic__description"> Под консультационным управлением </div>
                     </div>
                 </div>
@@ -118,14 +118,13 @@
             </div>
         </section>
 
-
         <section class="courses">
             <div class="courses__wrapper wrapper">
                 <div class="courses__grid grid_default">
                     <div class="courses__item">
                         <div class="courses__info">
                             <div class="courses__term"> 3 недели </div>
-                            <h3 class="courses__title"> Криптоинвестиции: успешный старт </h3>
+                            <h4 class="courses__title"> Криптоинвестиции: успешный старт </h4>
                             <div class="courses__description"> Базовые знания для новичков. Поможем разобраться с биржей, купить криптовалюту и совершить первые выгодные сделки с нуля. </div>
                             <a href="#" class="courses__button"> Подробнее </a>
                         </div>
@@ -135,7 +134,7 @@
                     <div class="courses__item">
                         <div class="courses__info">
                             <div class="courses__term"> от 2 до 8 месяцев </div>
-                            <h3 class="courses__title"> Мастерская трейдинга: практика и заработок </h3>
+                            <h4 class="courses__title"> Мастерская трейдинга: практика и заработок </h4>
                             <div class="courses__description"> Базовые знания для новичков. Поможем разобраться с биржей, купить криптовалюту и совершить первые выгодные сделки с нуля. </div>
                             <div class="courses__button"> Подробнее </div>
                         </div>
@@ -145,7 +144,7 @@
                     <div class="courses__item">
                         <div class="courses__info">
                             <div class="courses__term"> от 1 месяца </div>
-                            <h3 class="courses__title"> Индивидуальное сопровождение эксперта </h3>
+                            <h4 class="courses__title"> Индивидуальное сопровождение эксперта </h4>
                             <div class="courses__description"> Базовые знания для новичков. Поможем разобраться с биржей, купить криптовалюту и совершить первые выгодные сделки с нуля. </div>
                             <div class="courses__button"> Подробнее </div> 
                         </div>
@@ -154,7 +153,7 @@
                     </div>
                     <div class="courses__item" style="grid-template-columns: 1fr; justify-items: center; align-items: center;">
                         <div class="courses__info" style="margin: 0;">
-                            <h3 class="courses__title"> Какой выбрать? </h3>
+                            <h4 class="courses__title"> Какой выбрать? </h4>
                             <div class="courses__button"> Сравнить курсы </div>
                         </div>
                     </div>
@@ -162,40 +161,40 @@
             </div>
         </section>
 
-        <section class="education">
+        <!-- <section class="education">
             <div class="education__wrapper wrapper">
                 <div class="education__grid grid_default"> 
-                    <h2 class="education__title"> Как проходит обучение </h2>
+                    <h3 class="education__title"> Как проходит обучение </h3>
                     <div class="education__video_wrapper"> 
-                        <video class="education__video" autoplay loop width="100%">
+                        <video class="education__video" autoplay loop>
                             <source src="video/promo.mp4">   
                         </video>
                     </div>
                     <div class="education__steps">
                         <div class="steps__item"> 
                             <div class="steps__number"> 1 </div>
-                            <h3 class="steps__title"> Видеоуроки <br> и онлайн-встречи </h3>
+                            <h4 class="steps__title"> Видеоуроки <br> и онлайн-встречи </h4>
                             <div class="steps__text"> Доступ к ним остается навсегда.</div>
                         </div>
                         <div class="steps__item"> 
                             <div class="steps__number"> 2 </div>
-                            <h3 class="steps__title"> Домашние <br> задания </h3>
+                            <h4 class="steps__title"> Домашние <br> задания </h4>
                             <div class="steps__text"> С обратной связью от эксперта. </div>
                         </div>
                         <div class="steps__item"> 
                             <div class="steps__number"> 3 </div>
-                            <h3 class="steps__title"> Кураторы <br> курсов</h3>
+                            <h4 class="steps__title"> Кураторы <br> курсов</h4>
                             <div class="steps__text"> Всегда на связи, чтобы ответить на ваши вопросы.</div>
                         </div>
                         <div class="steps__item"> 
                             <div class="steps__number"> 4 </div>
-                            <h3 class="steps__title"> Чат с участниками <br> курса </h3>
+                            <h4 class="steps__title"> Чат с участниками <br> курса </h4>
                             <div class="steps__text"> Новости и прогнозы, полезные материалы и просто общение.</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="experts"> 
             <div class="experts__wrapper wrapper">
@@ -213,7 +212,7 @@
                             <img class="experts__img" src="img/png/expert_2.png">
                             <div class="experts__info">
                                 <div class="info__name"> Дмитрий Тюрин </div>
-                                <div class="info__description"> Инвестор на криптовалютном рынке с положительной дохо-дностью 90 месяцев подряд. </div>
+                                <div class="info__description"> Инвестор на криптовалютном рынке с положительной доходностью 90 месяцев подряд. </div>
                             </div>
                         </div>
                         <div class="experts__card">
@@ -261,11 +260,11 @@
             <div class="footer__grid">
              <div class="footer__top grid_default">
                     <div class="footer__social">
-                        <img class="footer__logo" src="img/svg/logo_white.svg">
+                        <a href="#"> <img class="footer__logo" src="img/svg/logo_white.svg" alt="logo"> </a>
                         <div class="social__icons">
-                            <img class="footer__vk" src="img/svg/icon_vk.svg">
-                            <img class="footer__yt" src="img/svg/icon_yt.svg">
-                            <img class="footer__tg" src="img/svg/icon_tg.svg">
+                            <a href="#"> <img class="footer__vk" src="img/svg/icon_vk.svg" alt="vk"> </a>
+                            <a href="#"> <img class="footer__yt" src="img/svg/icon_yt.svg" alt="YouTube"> </a>
+                            <a href="#"> <img class="footer__tg" src="img/svg/icon_tg.svg" alt="telegram"> </a>
                         </div>
                     </div>
                     <ul class="footer__courses">

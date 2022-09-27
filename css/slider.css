@@ -127,14 +127,14 @@
 @media (max-width: 425px) {
     .info__title {
         font-weight: 700;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 26px;
+        line-height: 28px;
     }
 
     .info__description {
         font-weight: 400;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 18px;
     }
 }
 

@@ -53,6 +53,7 @@
 
     .header__links span {
         width: 100vw;
+        /* width: calc(100vw - 50px); */
         height: 2px;
         background-color: var(--color-background-black);
     }
@@ -71,8 +72,8 @@
 
     .header__burger span {
         position: absolute;
-        left: 90%;
-        top: 17%;
+        right: 5%;
+        top: 5%;
         justify-self: center;
         width: 25px;
         height: 3px;
@@ -81,18 +82,18 @@
     }
     
     .header__burger span:nth-of-type(2){
-        top: calc(17% - 10px);
+        top: calc(5% - 10px);
     }
 
     .header__burger span:nth-of-type(3){
-        top: calc(17% + 10px);
+        top: calc(5% + 10px);
     }
 }
 
 .header__burger._active span {
     position: absolute;
-    left: 90%;
-    top: 17%;
+    right: 5%;
+    top: 5%;
     justify-self: center;
     width: 25px;
     height: 3px;
@@ -110,7 +111,7 @@
 }
 
 .header__burger._active span:nth-of-type(2){
-    top: 17%;
+    top: 5%;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -119,7 +120,7 @@
 }
 
 .header__burger._active span:nth-of-type(3){
-    top: 17%;
+    top: 5%;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -130,6 +131,7 @@
 .header__links._active {
     display: grid;
     height: 100%;
+
 }
 
 .header__account_button._active {

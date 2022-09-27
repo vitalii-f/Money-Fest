@@ -99,9 +99,16 @@
         margin: 0 auto;
     }
 
-    .feedback__form > input {
-        /* margin: 0px 15px; */
-    }
+    /* .feedback__content {
+        grid-column: 1/13;
+    } */
+}
+
+@media (max-width: 425px){
+   .feedback__wrapper {
+    margin-left: 0;
+   }
+    
 }
 
 /* FeedBack */
