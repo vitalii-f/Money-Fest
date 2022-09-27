@@ -52,7 +52,7 @@
     }
 
     .header__links span {
-        width: 100vw;
+        width: 99vw;
         /* width: calc(100vw - 50px); */
         height: 2px;
         background-color: var(--color-background-black);
@@ -87,6 +87,12 @@
 
     .header__burger span:nth-of-type(3){
         top: calc(5% + 10px);
+    }
+}
+
+@media (max-width: 425px) {
+    .header__grid {
+        gap: 0;
     }
 }
 
