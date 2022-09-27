@@ -198,7 +198,7 @@
 
         <section class="experts"> 
             <div class="experts__wrapper wrapper">
-                <div class="experts__grid grid_default">
+                <div class="experts__grid">
                     <h3 class="experts__title title_default"> Эксперты школы </h3>
                     <div class="experts__cards">
                         <div class="experts__card">
@@ -236,20 +236,22 @@
         </section>
 
         <section class="feedback">
-            <div class="feedback__wrapper wrapper grid_default">
-                <div class="feedback__content">
-                    <div class="feedback__info"> 
-                        <h3 class="feedback__title"> Есть вопросы? <br> Сейчас ответим</h3>
-                        <p class="feedback__description"> Оставьте свои контакты </p>
+            <div class="feedback__wrapper wrapper">
+                <div class="feedback__grid  grid_default">
+                    <div class="feedback__content">
+                        <div class="feedback__info"> 
+                            <h3 class="feedback__title"> Есть вопросы? <br> Сейчас ответим</h3>
+                            <p class="feedback__description"> Оставьте свои контакты </p>
+                        </div>
+                        <form class="feedback__form" action="#" autocomplete="on" name="feedback__form">
+                            <input class="form__name" name="name" type="text" placeholder="Имя">
+                            <input class="form__phone" name="phone" type="number" placeholder="8 (333) 232-22-11">
+                            <input class="form__email" name="email" type="email" placeholder="Email">
+
+                            <label> Нажимая «Отправить», соглашаюсь с <u> <a href="#">  правилами </a> </u> </label>
+                            <input class="form__input button_inactive" name="form-email" type="submit" placeholder="отправить">
+                        </form>
                     </div>
-                    <form class="feedback__form" action="#" autocomplete="on" name="feedback__form">
-                        <input class="form__name" name="name" type="text" placeholder="Имя">
-                        <input class="form__phone" name="phone" type="number" placeholder="8 (333) 232-22-11">
-                        <input class="form__email" name="email" type="email" placeholder="Email">
-                        
-                        <label> Нажимая «Отправить», соглашаюсь с <u> <a href="#">  правилами </a> </u> </label>
-                        <input class="form__input button_inactive" name="form-email" type="submit" placeholder="отправить">
-                    </form>
                 </div>
             </div>
         </section>

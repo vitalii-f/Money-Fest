@@ -131,7 +131,6 @@
 .header__links._active {
     display: grid;
     height: 100%;
-
 }
 
 .header__account_button._active {

@@ -79,6 +79,7 @@
         padding: 0 10px;
         grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         grid-template-rows: 0.1fr 0.5fr;
+        scroll-snap-align: start;
     }
 
     .courses__img {

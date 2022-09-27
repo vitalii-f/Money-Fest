@@ -45,11 +45,13 @@
 
 @media (max-width: 1100px) {
     .experts__grid {
-        margin-left: 0px;
-        padding-left: 0;
+        /* margin-left: 0px; */
+        margin: 0;
     }
 
     .experts__cards {
+        /* padding-right: 15px; */
+        grid-column: 1/12;
         scroll-snap-type: x mandatory;
         overflow-x: scroll;
         scroll-behavior: smooth;
@@ -63,6 +65,10 @@
     .experts__card {
         scroll-snap-align: start;
         padding-left: 15px;
+    }
+
+    .experts__card:last-of-type {
+        padding-right: 15px;
     }
 
     .experts__title {

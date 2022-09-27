@@ -79,8 +79,6 @@
         flex-direction: column;
         margin: 0 auto;
         justify-items: center;
-        /* grid-template-columns: none;
-        grid-template-rows: none; */
     }
 
     .feedback__title {
@@ -98,16 +96,17 @@
     .form__input {
         margin: 0 auto;
     }
-
-    /* .feedback__content {
-        grid-column: 1/13;
-    } */
 }
 
 @media (max-width: 425px){
-   .feedback__wrapper {
-    margin-left: 0;
-   }
+    .feedback__grid {
+        margin: 0;
+        gap: 0;
+    }
+
+    .feedback__content {
+        height: 650px;
+    }
     
 }
 
