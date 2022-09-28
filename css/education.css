@@ -2,9 +2,6 @@
 
 .education {
 }
-.education__grid {
-
-}
 .education__title {
     grid-row: 1/2;
     grid-column: 1/8;
@@ -82,8 +79,18 @@
     }
 }
 
+@media (max-width: 489px) {
+    .education__steps {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
 
 @media (max-width: 425px) {
+    .education__grid {
+        gap: 0;
+    }
+
     .education__title {
         grid-column: 1/10;
     }
@@ -115,9 +122,11 @@
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         column-gap: 15px;
     }
+}
 
-    .education__wrapper {
-        
+@media (max-width: 344px) {
+    .education__steps {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }
 
