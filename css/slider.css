@@ -100,19 +100,28 @@
     .slider__prev, .slider__next {
         display: none;
     }
+    .slider__wrapper {
+        display: block;
+        padding: 0 15px 0 15px;
+    }
+
+    .item__info {
+        margin: 0 10px;
+    }
+
+    .info__title {
+        height: 200px;
+    }
 }
 
 @media (max-width: 768px) {
     .slider__item {
         grid-template-columns: none;
         justify-content: center;
+        margin-left: 15px;
     }
 
-    .item__info {
-        display: flex;
-        flex-direction: column;
-        margin: 0 10px;
-    }
+
 
     .item__img {
         display: none;
@@ -125,7 +134,14 @@
 }
 
 @media (max-width: 425px) {
+    .item__info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
     .info__title {
+        height: 120px;
         font-weight: 700;
         font-size: 26px;
         line-height: 28px;

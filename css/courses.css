@@ -89,16 +89,50 @@
 }
 
 @media (max-width: 425px) {
+    .courses__wrapper {
+        gap: 0;
+    }
+
+    .courses__grid {
+        /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        grid-template-columns: none;
+        gap: 0;
+    }
+
+    .courses__item {
+        grid-template-rows: 0.3fr 1fr;
+        grid-template-columns: 1fr;
+        margin-right: 15px;
+        width: 250px;
+    }
+
+    .courses__item:last-of-type {
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+
+    .courses__info {
+        margin-left: 0;
+    }
+
+    .courses__img {
+        max-width: 88px;
+        max-height: 88px;
+        padding: 15px 0 0 0;
+    }
     .courses__title {
         font-weight: 700;
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 16px;
+        line-height: 18px;
+        max-width: 60%;
     }
     .courses__description {
+        /* max-width: 100%; */
         font-weight: 400;
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 16px;
         color: var(--color-secondary-text);
+        /* word-break: break-all; */
     }
     .courses__button {
         font-weight: 500;

@@ -134,6 +134,7 @@ section {
 
     .grid_default {
         margin: 0px 15px;
+        /* column-gap: 15px; */
     }
 }
 
