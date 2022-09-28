@@ -1,5 +1,4 @@
 /* slider */
-
 .slider__wrapper {
     display: grid;
     column-gap: 20px;
@@ -96,63 +95,7 @@
     right: 50%;
 }
 
-@media (max-width: 1100px) {
-    .slider__prev, .slider__next {
-        display: none;
-    }
-    .slider__wrapper {
-        display: block;
-        padding: 0 15px 0 15px;
-    }
 
-    .item__info {
-        margin: 0 10px;
-    }
-
-    .info__title {
-        height: 200px;
-    }
-}
-
-@media (max-width: 768px) {
-    .slider__item {
-        grid-template-columns: none;
-        justify-content: center;
-        margin-left: 15px;
-    }
-
-
-
-    .item__img {
-        display: none;
-    }
-
-    .info_button {
-        width: 100%;
-        margin: 0 auto;
-    }   
-}
-
-@media (max-width: 425px) {
-    .item__info {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-
-    .info__title {
-        height: 120px;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 28px;
-    }
-
-    .info__description {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-    }
-}
 
 /* При наведении на кнопки добавляем фон кнопок */
 .slider__prev:hover,
@@ -180,8 +123,72 @@
     -ms-transition: background-color 0.6s ease;
     -o-transition: background-color 0.6s ease;
 }
-.active, .slider__dots_item:hover {
+.active {
+    background-color: var(--color-gold) !important;
+}
+.slider__dots_item:hover {
     background-color: var(--color-gold);
+}
+
+
+@media (max-width: 1100px) {
+    .slider__prev, .slider__next {
+        display: none;
+    }
+    .slider__wrapper {
+        display: block;
+        padding: 0 15px 0 15px;
+    }
+
+    .item__info {
+        margin: 0 10px;
+    }
+
+    .info__title {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider__item {
+        grid-template-columns: none;
+        justify-content: center;
+        margin-left: 15px;
+    }
+
+    .item__img {
+        display: none;
+    }
+
+    .info_button {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .slider__dots_item:hover {
+        background-color: #ddd;
+    }
+}
+
+@media (max-width: 425px) {
+    .item__info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .info__title {
+        height: 120px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 28px;
+    }
+
+    .info__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 /* slider */
